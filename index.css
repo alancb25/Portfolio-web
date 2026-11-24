@@ -8,52 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif;
-
 }
-
-
-
-
-/* .navbar {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
-    background-color: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(8px);
-    transition: top 0.4s ease;
-}
-
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex: 1;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-    font-size:15px;
-    font-weight: 500;
-    font-family: 'DM Sans', sans-serif;
-    
-} */
 
 .navbar {
     width: fit-content;
@@ -70,10 +29,8 @@ body {
     transform: translateX(-50%);
     z-index: 1000;
 
-    background-color:rgba(42, 42, 42, 0.371);
+    background-color: rgba(42, 42, 42, 0.371);
     backdrop-filter: blur(2px);
-
-    /* border: 1px solid rgba(0, 0, 0, 0.2); */
     border-radius: 50px;
 }
 
@@ -98,42 +55,42 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    min-height: 100svh;
     background-image: linear-gradient(
             90deg,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.15),
-            rgba(0, 0, 0, 0.05)
-        ),url('Alan photo2.png');
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.25) 55%,
+            rgba(0, 0, 0, 0.05) 100%
+        ),
+        url('Alan photo2.png');
 
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: 82% center;
 
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-
 
 .content {
     padding: 90px 8% 0;
     margin-top: 110px;
     font-size: 30px;
     color: aliceblue;
-
 }
-.name{
+
+.name {
     margin-top: 5px;
     font-size: 100px;
     color: white;
 }
-.title{
+
+.title {
     margin-top: 5px;
     color: rgb(184, 182, 182);
     font-size: 23px;
-    
 }
-.description{
+
+.description {
     margin-top: 40px;
     color: white;
     font-size: 20px;
@@ -142,13 +99,9 @@ body {
 
 .home-button {
     display: flex;
-    align-items: center;
-    margin-top: 35px;
-}
-.home-button {
-    display: flex;
     gap: 15px;
     align-items: center;
+    margin-top: 35px;
 }
 
 .get {
@@ -166,23 +119,21 @@ body {
     background-color: rgb(162, 162, 162);
 }
 
+/* ======================== Educaton */
 
-/* ========================================div 2 */
+
 .navbar2 {
     width: 100%;
     height: 110px;
     background-color: rgb(52, 135, 52);
-    
 }
 
 .education {
     width: 100%;
-    padding:50px 100px;
+    padding: 50px 100px;
     background-color: white;
     margin-bottom: 100px;
-
     color: black;
-    
 }
 
 .education h1 {
@@ -200,17 +151,16 @@ body {
 
 .listing {
     border-left: 2px solid white;
-   
 }
 
 .edu-item {
-    /* margin-bottom: 40px; */
     padding: 30px 20px;
     margin-bottom: 20px;
     border-top: 2px solid #A8B69E;
     background-color: white;
     transition: 0.3s;
 }
+
 .edu-item:hover {
     border-top-color: #348738;
     transform: translateY(-3px);
@@ -228,13 +178,15 @@ body {
     margin-bottom: 8px;
 }
 
-.edu-item p, .edu-item span {
+.edu-item p,
+.edu-item span {
     font-size: 13px;
     color: grey;
     margin-bottom: 8px;
 }
 
-/* ============================skills */
+
+/* ======================== skills */
 
 
 .navbar3 {
@@ -253,12 +205,8 @@ body {
     color: black;
 }
 
-
 .skills-heading h1 {
     margin-top: 0;
-}
-
-.skills-heading h1 {
     font-size: 38px;
 }
 
@@ -270,7 +218,6 @@ body {
     max-width: 650px;
 }
 
-
 .skills-category {
     margin-top: 45px;
 }
@@ -281,7 +228,6 @@ body {
     margin-bottom: 18px;
     margin-top: 30px;
 }
-
 
 .skills-list {
     display: flex;
@@ -307,10 +253,7 @@ body {
     transform: translateY(-3px);
 }
 
-
-/* ======================Projects */
-
-
+/* ======================== Projects */
 .navbar4 {
     width: 100%;
     height: 110px;
@@ -320,16 +263,13 @@ body {
 .projects {
     width: 100%;
     padding: 50px 100px;
-    background-color:white;
+    background-color: white;
     color: black;
 }
-
-
 
 .projects-heading h1 {
     font-size: 38px;
 }
-
 
 .projects-heading p {
     color: grey;
@@ -342,6 +282,7 @@ body {
 .project-list {
     margin-top: 40px;
 }
+
 .project-item {
     padding: 30px 20px;
     margin-bottom: 20px;
@@ -380,6 +321,7 @@ body {
     border-radius: 4px;
     color: #356B43;
     font-size: 12px;
+    transition: 0.3s;
 }
 
 .project-tags span:hover {
@@ -387,19 +329,16 @@ body {
     color: white;
     border-color: #356B43;
     transform: translateY(-3px);
-
 }
 
 .fa-github {
     font-size: 30px;
 }
 
-/* =====================contact */
-
-
+/* ======================== Contact */
 .navbar5 {
     width: 100%;
-    height:110px;
+    height: 110px;
     background-color: rgb(52, 135, 52);
 }
 
@@ -442,7 +381,7 @@ body {
     transform: translateY(-5px);
 }
 
-.hr{
+.hr {
     width: 60px;
     border: none;
     height: 2px;
@@ -450,7 +389,7 @@ body {
     margin: 25px auto;
 }
 
-/* ==========quote=========== */
+/* ======================== Quote */
 .contact-quote {
     text-align: center;
     margin-top: 80px;
@@ -468,8 +407,8 @@ body {
     color: grey;
     margin-top: 15px;
 }
-/* ========================footer  */
 
+/* ======================== Footer */
 .footer {
     width: 100%;
     padding: 20px 10%;
@@ -484,11 +423,8 @@ body {
     font-size: 14px;
 }
 
-
-
-@media screen and (max-width: 400px) {
-
- /* ALL NAVS */
+/* ======================== Responsive Media  */
+@media screen and (max-width: 900px) {
     .navbar,
     .navbar2,
     .navbar3,
@@ -498,31 +434,72 @@ body {
         flex-shrink: 0;
     }
 
-  
     .navbar {
-        width: 96%;
+        width: 94%;
         height: 55px;
-        padding: 0 8px;
+        padding: 0 12px;
     }
 
     .nav {
-        gap: 7px;
+        gap: 12px;
         flex-wrap: nowrap;
     }
 
     .nav a {
-        font-size: 10px;
+        font-size: 13px;
         white-space: nowrap;
     }
+}
 
-    /* bg img  */
-
+@media screen and (max-width: 768px) {
     .container {
-        width: 100%;
-        min-height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-position: 82% center;
+        background-image: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.25) 55%,
+                rgba(0, 0, 0, 0.05) 100%
+            ),
+            url('Alan photo2.png');
     }
 
+    .content {
+        padding: 40px 6% 0;
+        margin-top: 90px;
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 54px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 15px;
+        margin-top: 24px;
+    }
+
+    .home-button {
+        flex-wrap: wrap;
+    }
+
+    .education,
+    .skills,
+    .projects,
+    .contact {
+        padding: 40px 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav {
+        gap: 7px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
 }
